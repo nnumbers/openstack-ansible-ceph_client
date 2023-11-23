@@ -144,3 +144,5 @@ ceph_persistent_write_log_cache_dir: "/rbd-write-log-cache"
 ceph_persistent_write_log_cache_owner: "libvirt-qemu"
 ceph_persistent_write_log_cache_group: "ceph"
 ceph_persistent_write_log_cache_mode: "0775"
+
+ceph_extra_components: []

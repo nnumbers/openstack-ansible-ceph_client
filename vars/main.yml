@@ -51,7 +51,9 @@ ceph_components:
 ceph_immutable_object_cache_packages:
   - "{{ ceph_immutable_object_cache_enabled | ternary('ceph-immutable-object-cache', '') }}"
 
-ceph_extra_components: []
+# ceph_extra_components definition with default value has been moved to ../default/main.yml
+# ceph_extra_components: []
+
 # Gnocchi has been moved out from the integrated OSA repo, but can still
 # be optionally enabled by using the configuration in the os_gnocchi role repo
 # under the 'extras' directory
