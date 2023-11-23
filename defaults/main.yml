@@ -145,4 +145,13 @@ ceph_persistent_write_log_cache_owner: "libvirt-qemu"
 ceph_persistent_write_log_cache_group: "ceph"
 ceph_persistent_write_log_cache_mode: "0775"
 
+# Gnocchi has been moved out from the integrated OSA repo, but can still
+# be optionally enabled by using the configuration in the os_gnocchi role repo
+# under the 'extras' directory
+#  - component: gnocchi_api
+#    package:
+#      - "{{ python_ceph_package }}"
+#    client:
+#      - name: '{{ gnocchi_ceph_client }}'
+#    service: '{{ ceph_gnocchi_service_names }}'
 ceph_extra_components: []
